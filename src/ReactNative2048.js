@@ -9,6 +9,9 @@ import {
 
 import Style from './style/Style'
 
+const boardLines = 4
+const boardColumns = 4
+
 export default class ReactNative2048 extends Component {
   render() {
     return (
@@ -43,10 +46,36 @@ export default class ReactNative2048 extends Component {
         </View>
         <View style={Style.homeGame}>
           <View style={Style.board}>
+            {this._fillBoardWithTiles()}
           </View>
         </View>
       </View>
     );
+  }
+
+  _fillBoardWithTiles() {
+    let views = []
+
+    for (var r = 0; r < boardColumns; r ++) {
+      let tileRow = []
+
+      for (var i = 0; i < boardLines; i ++) {
+
+        tileRow.push(
+          <View
+            style={Style.tile}
+            key={r + '-' + i}/>
+        )
+      }
+
+      views.push(
+        <View style={Style.tileRow} key={'row-' + r}>
+          {tileRow}
+        </View>
+      )
+    }
+
+    return views
   }
 }
 

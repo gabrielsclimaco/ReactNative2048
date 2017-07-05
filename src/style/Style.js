@@ -5,7 +5,6 @@ import {
   responsiveFontSize
 } from 'react-native-responsive-dimensions'
 
-
 const Style = StyleSheet.create({
 
   homeScreen: {
@@ -27,14 +26,32 @@ const Style = StyleSheet.create({
 
   homeGame: {
     flex: 8,
-    justifyContent: 'space-around',
+    justifyContent: 'center',
     // backgroundColor: 'red',
     alignItems: 'center'
   },
 
   board: {
-    flex: 8,
-    backgroundColor: '#bbada0'
+    backgroundColor: '#bbada0',
+    width: responsiveWidth(95),
+    height: responsiveWidth(95),
+    borderRadius: 5,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  tileRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+
+  tile: {
+    backgroundColor: 'rgba(238, 228, 218, 0.35)',
+    width: responsiveWidth(95)*.22,
+    height: responsiveWidth(95)*.22,
+    borderRadius: 5,
+    margin: 3
   },
 
   scores: {

@@ -4,7 +4,8 @@ import {
   Text,
   View,
   TouchableOpacity,
-  Alert
+  Alert,
+  AsyncStorage
 } from 'react-native';
 
 import Style from './style/Style'
@@ -13,6 +14,16 @@ const boardLines = 4
 const boardColumns = 4
 
 export default class ReactNative2048 extends Component {
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      score: 0,
+      bestScore: 0
+    }
+  }
+
   render() {
     return (
       <View style={Style.homeScreen}>
@@ -22,11 +33,11 @@ export default class ReactNative2048 extends Component {
             <View style={Style.scores}>
               <View style={Style.scoreBoard}>
                 <Text style={Style.scoreTitle}>pontos</Text>
-                <Text style={Style.scoreValue}>184</Text>
+                <Text style={Style.scoreValue}>{this.state.score}</Text>
               </View>
               <View style={Style.scoreBoard}>
                 <Text style={Style.scoreTitle}>recorde</Text>
-                <Text style={Style.scoreValue}>2048</Text>
+                <Text style={Style.scoreValue}>{this.state.bestScore}</Text>
               </View>
             </View>
           </View>
@@ -39,7 +50,7 @@ export default class ReactNative2048 extends Component {
             </Text>
             <TouchableOpacity
               style={Style.newGameButton}
-              onPress={() => { Alert.alert('Novo jogo')}}>
+              onPress={this._newGame.bind(this)}>
               <Text style={Style.newGameLabel}>Novo jogo</Text>
             </TouchableOpacity>
           </View>
@@ -76,6 +87,12 @@ export default class ReactNative2048 extends Component {
     }
 
     return views
+  }
+
+  _newGame() {
+    this.setState({
+      score: 0
+    })
   }
 }
 

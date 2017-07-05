@@ -13,8 +13,11 @@ const Style = StyleSheet.create({
     backgroundColor: '#faf8ef'
   },
 
-  homeTitle: {
+  homeHeader: {
     flex: 2,
+  },
+
+  homeTitle: {
     justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'row',
@@ -24,12 +27,13 @@ const Style = StyleSheet.create({
 
   homeGame: {
     flex: 8,
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     // backgroundColor: 'red',
     alignItems: 'center'
   },
 
   board: {
+    flex: 8,
     backgroundColor: '#bbada0'
   },
 
@@ -66,6 +70,34 @@ const Style = StyleSheet.create({
     color: '#faf8ef',
     fontWeight: 'bold',
     fontSize: responsiveFontSize(3)
+  },
+
+  subtitle: {
+    // flex: 2,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 15
+  },
+
+  label: {
+    flex: 8,
+    color: '#776e65'
+  },
+
+  newGameButton: {
+    backgroundColor: '#8f7a66',
+    borderRadius: 5,
+    width: responsiveWidth(30),
+    height: responsiveHeight(5),
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+
+  newGameLabel: {
+    color: '#faf8ef',
+    fontWeight: 'bold',
+    fontSize: responsiveFontSize(2)
   }
 
 })

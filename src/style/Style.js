@@ -1,15 +1,15 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet } from 'react-native';
 import {
   responsiveHeight,
   responsiveWidth,
-  responsiveFontSize
-} from 'react-native-responsive-dimensions'
+  responsiveFontSize,
+} from 'react-native-responsive-dimensions';
 
 const Style = StyleSheet.create({
 
   homeScreen: {
     flex: 1,
-    backgroundColor: '#faf8ef'
+    backgroundColor: '#faf8ef',
   },
 
   homeHeader: {
@@ -21,14 +21,14 @@ const Style = StyleSheet.create({
     alignItems: 'center',
     flexDirection: 'row',
     // backgroundColor: 'green',
-    padding: 25
+    padding: 25,
   },
 
   homeGame: {
     flex: 8,
     justifyContent: 'center',
     // backgroundColor: 'red',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 
   board: {
@@ -43,22 +43,22 @@ const Style = StyleSheet.create({
   tileRow: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
 
   tile: {
     backgroundColor: 'rgba(238, 228, 218, 0.35)',
-    width: responsiveWidth(95)*.22,
-    height: responsiveWidth(95)*.22,
+    width: responsiveWidth(95) * 0.22,
+    height: responsiveWidth(95) * 0.22,
     borderRadius: 5,
-    margin: 3
+    margin: 3,
   },
 
   scores: {
     alignItems: 'center',
     justifyContent: 'space-between',
     flexDirection: 'row',
-    width: responsiveWidth(45)
+    width: responsiveWidth(45),
   },
 
   scoreBoard: {
@@ -68,25 +68,25 @@ const Style = StyleSheet.create({
     padding: 10,
     borderRadius: 10,
     justifyContent: 'space-between',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 
   title: {
     color: '#776e65',
     fontSize: responsiveFontSize(5),
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
 
   scoreTitle: {
     color: '#eee4da',
     fontWeight: 'bold',
-    fontSize: responsiveFontSize(2)
+    fontSize: responsiveFontSize(2),
   },
 
   scoreValue: {
     color: '#faf8ef',
     fontWeight: 'bold',
-    fontSize: responsiveFontSize(3)
+    fontSize: responsiveFontSize(3),
   },
 
   subtitle: {
@@ -94,12 +94,12 @@ const Style = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 15
+    padding: 15,
   },
 
   label: {
     flex: 8,
-    color: '#776e65'
+    color: '#776e65',
   },
 
   newGameButton: {
@@ -108,15 +108,15 @@ const Style = StyleSheet.create({
     width: responsiveWidth(30),
     height: responsiveHeight(5),
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
 
   newGameLabel: {
     color: '#faf8ef',
     fontWeight: 'bold',
-    fontSize: responsiveFontSize(2)
-  }
+    fontSize: responsiveFontSize(2),
+  },
 
-})
+});
 
-export default Style
+export default Style;

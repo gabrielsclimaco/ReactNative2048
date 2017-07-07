@@ -4,11 +4,16 @@
       "browser": true
   },
   "plugins": [
-      "react"
+      "react",
+      "jsx-a11y",
+      "import"
   ],
   // Use the AirBnB JS styleguide - https://github.com/airbnb/javascript
   "extends": "airbnb",
   "rules": {
+    "jsx-a11y/href-no-hash": "off",
+    "class-methods-use-this": "off",
+    "prefer-template": "off",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
   }
 }

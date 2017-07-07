@@ -117,6 +117,174 @@ const Style = StyleSheet.create({
     fontSize: responsiveFontSize(2),
   },
 
+  tile2: {
+    flex: 1,
+    backgroundColor: '#eee4da',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+
+  text2: {
+    color: '#776e65',
+    fontSize: responsiveFontSize(5),
+    fontWeight: 'bold',
+  },
+
+  tile4: {
+    flex: 1,
+    backgroundColor: '#ede0c8',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+
+  text4: {
+    color: '#776e65',
+    fontSize: responsiveFontSize(5),
+    fontWeight: 'bold',
+  },
+
+  tile8: {
+    flex: 1,
+    backgroundColor: '#f2b179',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+
+  text8: {
+    color: '#f9f6f2',
+    fontSize: responsiveFontSize(5),
+    fontWeight: 'bold',
+  },
+
+  tile16: {
+    flex: 1,
+    backgroundColor: '#f59563',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+
+  text16: {
+    color: '#f9f6f2',
+    fontSize: responsiveFontSize(5),
+    fontWeight: 'bold',
+  },
+
+  tile32: {
+    flex: 1,
+    backgroundColor: 'rgba(246, 124, 95, 0.9)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+
+  text32: {
+    color: '#f9f6f2',
+    fontSize: responsiveFontSize(5),
+    fontWeight: 'bold',
+  },
+
+  tile64: {
+    flex: 1,
+    backgroundColor: 'rgba(246, 94, 59, 0.8)',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+
+  text64: {
+    color: '#f9f6f2',
+    fontSize: responsiveFontSize(5),
+    fontWeight: 'bold',
+  },
+
+  tile128: {
+    flex: 1,
+    backgroundColor: '#edcf72',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+
+  text128: {
+    color: '#f9f6f2',
+    fontSize: responsiveFontSize(5),
+    fontWeight: 'bold',
+  },
+
+  tile256: {
+    flex: 1,
+    backgroundColor: '#edcc61',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+
+  text256: {
+    color: '#f9f6f2',
+    fontSize: responsiveFontSize(5),
+    fontWeight: 'bold',
+  },
+
+  tile512: {
+    flex: 1,
+    backgroundColor: '#edc850',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+
+  text512: {
+    color: '#f9f6f2',
+    fontSize: responsiveFontSize(5),
+    fontWeight: 'bold',
+  },
+
+  tile1024: {
+    flex: 1,
+    backgroundColor: '#edc53f',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+
+  text1024: {
+    color: '#f9f6f2',
+    fontSize: responsiveFontSize(4),
+    fontWeight: 'bold',
+  },
+
+  tile2048: {
+    flex: 1,
+    backgroundColor: '#edc22e',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+
+  text2048: {
+    color: '#f9f6f2',
+    fontSize: responsiveFontSize(3.5),
+    fontWeight: 'bold',
+  },
+
+  tileSuper: {
+    flex: 1,
+    backgroundColor: '#3c3a32',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 5,
+  },
+
+  textSuper: {
+    color: '#f9f6f2',
+    fontSize: responsiveFontSize(3.5),
+    fontWeight: 'bold',
+  },
+
 });
 
 export default Style;

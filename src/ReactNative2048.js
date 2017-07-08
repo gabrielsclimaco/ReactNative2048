@@ -5,7 +5,7 @@ import {
   View,
   TouchableOpacity,
 } from 'react-native';
-
+import NumberTile from './NumberTile';
 import Style from './style/Style';
 
 const boardLines = 4;
@@ -20,6 +20,12 @@ export default class ReactNative2048 extends Component {
     this.state = {
       score: 0,
       bestScore: 0,
+      grid: [
+        [null, null, null, null],
+        [null, null, null, null],
+        [null, null, null, null],
+        [null, null, null, null],
+      ],
     };
   }
 
@@ -35,7 +41,10 @@ export default class ReactNative2048 extends Component {
           <View
             style={Style.tile}
             key={r + '-' + i}
-          />);
+          >
+            <NumberTile numberOfTile={this.state.grid[r][i]} />
+          </View>,
+        );
       }
 
       views.push(
